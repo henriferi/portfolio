@@ -51,9 +51,11 @@ const ProjectCard = styled.div`
 
 const ProjectImage = styled.img`
   width: 100%;
-  height: auto;
+  height: 100%; /* Defina a altura para 100% do contêiner */
+  object-fit: cover; /* Aplica o efeito de cover */
   display: block;
 `;
+
 
 const ProjectOverlay = styled.div`
   position: absolute;

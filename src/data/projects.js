@@ -2,52 +2,87 @@
 const projectsData = [
     {
         id: 1,
-        name: 'Projeto 1',
-        image: '/teste.png', // Insira o caminho correto para a imagem
-        liveLink: 'https://link-do-projeto1.com',
-        codeLink: 'https://github.com/seu-github/projeto1'
+        name: 'Ecommerce com Api products',
+        image: '/E-Commerce-kabousse.png', // Insira o caminho correto para a imagem
+        liveLink: 'https://henriferi.github.io/kabousse_store_nextjs/',
+        codeLink: 'https://github.com/henriferi/kabousse_store_nextjs'
     },
     {
         id: 2,
-        name: 'Projeto 2',
-        image: '/teste.png',
-        liveLink: 'https://link-do-projeto2.com',
-        codeLink: 'https://github.com/seu-github/projeto2'
+        name: 'Crud Users Database 2',
+        image: '/cadastro_usuarios_2.png', // Insira o caminho correto para a imagem
+        liveLink: 'https://github.com/henriferi/crud-app',
+        codeLink: 'https://github.com/henriferi/crud-app'
     },
     {
-        id: 1,
-        name: 'Projeto 1',
-        image: '/teste.png', // Insira o caminho correto para a imagem
-        liveLink: 'https://link-do-projeto1.com',
-        codeLink: 'https://github.com/seu-github/projeto1'
+        id: 3,
+        name: 'Crud NextJS, TypeScript, Database',
+        image: '/crud_next_database.png', // Insira o caminho correto para a imagem
+        liveLink: 'https://github.com/henriferi/app-bd',
+        codeLink: 'https://github.com/henriferi/app-bd'
     },
     {
-        id: 2,
-        name: 'Projeto 2',
-        image: '/teste.png',
-        liveLink: 'https://link-do-projeto2.com',
-        codeLink: 'https://github.com/seu-github/projeto2'
+        id: 4,
+        name: 'E-coommerce DivineSweets',
+        image: '/divineSweets.png', // Insira o caminho correto para a imagem
+        liveLink: 'https://henriferi.github.io/divineSweets/',
+        codeLink: 'https://github.com/henriferi/divineSweets'
     },
     {
-        id: 1,
-        name: 'Projeto 1',
-        image: '/teste.png', // Insira o caminho correto para a imagem
-        liveLink: 'https://link-do-projeto1.com',
-        codeLink: 'https://github.com/seu-github/projeto1'
+        id: 5,
+        name: 'Participantes no database',
+        image: '/projeto_nlw.png', // Insira o caminho correto para a imagem
+        liveLink: 'https://github.com/henriferi/projeto-rocketseat-nlw',
+        codeLink: 'https://github.com/henriferi/projeto-rocketseat-nlw'
     },
     {
-        id: 2,
-        name: 'Projeto 2',
-        image: '/teste.png',
-        liveLink: 'https://link-do-projeto2.com',
-        codeLink: 'https://github.com/seu-github/projeto2'
+        id: 6,
+        name: 'Requisição Api animes',
+        image: '/animes_api.png', // Insira o caminho correto para a imagem
+        liveLink: 'https://henriferi.github.io/animes-api/',
+        codeLink: 'https://github.com/henriferi/animes-api'
     },
     {
-        id: 2,
-        name: 'Projeto 2',
-        image: '/teste.png',
-        liveLink: 'https://link-do-projeto2.com',
-        codeLink: 'https://github.com/seu-github/projeto2'
+        id: 7,
+        name: 'Crud JavaScript',
+        image: '/crud_js.png',
+        liveLink: 'https://henriferi.github.io/crudJS/',
+        codeLink: 'https://github.com/henriferi/crudJS'
+    },
+    {
+        id: 8,
+        name: 'Plataforma Rocketseat',
+        image: '/event_platform.png', // Insira o caminho correto para a imagem
+        liveLink: 'https://github.com/henriferi/event-platform',
+        codeLink: 'https://github.com/henriferi/event-platform'
+    },
+    {
+        id: 9,
+        name: 'CatHouse, Start Recife',
+        image: '/Cathouse.png',
+        liveLink: 'https://team-cat-house.netlify.app/',
+        codeLink: 'https://github.com/henriferi/react-projeto-final-01-cat-house'
+    },
+    {
+        id: 10,
+        name: 'Portifolio 1.0',
+        image: '/portifolio1.0.png', // Insira o caminho correto para a imagem
+        liveLink: 'https://henriferi.github.io/portifolioatt/',
+        codeLink: 'https://github.com/henriferi/portifolioatt'
+    },
+    {
+        id: 11,
+        name: 'Lista de Presença',
+        image: '/List_presence.png',
+        liveLink: 'https://henriferi.github.io/List-presence/',
+        codeLink: 'https://github.com/henriferi/List-presence'
+    },
+    {
+        id: 12,
+        name: 'Desafio Alura, decodificador',
+        image: '/decodificador.png',
+        liveLink: 'https://henriferi.github.io/DesafioAlura/',
+        codeLink: 'https://github.com/henriferi/DesafioAlura'
     },
 ];
 
