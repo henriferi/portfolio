@@ -10,9 +10,8 @@ const SkillsContainer = styled.section`
   color: ${({ theme }) => theme.text};
   text-align: center;
 
-   @media (max-width: 768px) { /* Ajustes para telas menores */
-    padding: 30px; /* Diminuindo o padding em telas menores */
-    margin-top: 85%;
+   @media (max-width: 768px) { 
+    padding: 30px; 
   }
 `;
 
@@ -47,7 +46,7 @@ const SkillCard = styled.div`
 `;
 
 const SkillIcon = styled.div`
-  font-size: 3rem; /* Tamanho do ícone */
+  font-size: 3rem;
   margin-bottom: 10px;
 `;
 

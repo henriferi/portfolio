@@ -8,26 +8,27 @@ import { FaWhatsapp, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 const AboutContainer = styled.section`
   display: flex;
   align-items: center;
-  margin-top: 100px; /* Adicionando margin-top para afastar do header */
+  justify-content: center;
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
-  
-  @media (max-width: 768px) { /* Para telas menores */
-    flex-direction: column; /* Muda para coluna */
+  padding: 200px 20px; 
+
+  @media (max-width: 768px) { 
+    padding: 20px 0;
+    flex-direction: column; 
   }
 `;
 
 const ProfileImage = styled.img`
-  width: 500px; /* Diminuindo o tamanho da imagem */
+  width: 500px;
   height: auto;
   border-radius: 30%;
   margin-right: 30px;
 
   @media (max-width: 768px) {
-    width: 300px; /* Reduzindo mais o tamanho da imagem em telas menores */
-    margin-top: 80%;
-    margin-right: 0; /* Remove a margem direita em telas menores */
-    margin-bottom: 20px; /* Adicionando margem inferior para separar da descrição */
+    width: 300px;
+    margin-right: 0; 
+    margin-bottom: 20px; 
   }
 `;
 
@@ -37,7 +38,7 @@ const TextContainer = styled.div`
   align-items: flex-start;
 
   @media (max-width: 768px) {
-    align-items: center; /* Centraliza os textos em telas menores */
+    align-items: center; 
   }
 `;
 
@@ -76,13 +77,13 @@ const Role = styled.h3`
 
 const AboutText = styled.p`
   max-width: 600px;
-  line-height: 1.6; /* Espaçamento entre as linhas */
+  line-height: 1.6; 
   margin-top: 20px;
-  margin-bottom: 20px; /* Espaço inferior */
-  white-space: pre-line; /* Preserva as quebras de linha */
+  margin-bottom: 20px; 
+  white-space: pre-line; 
 
   @media (max-width: 768px) {
-    text-align: center; /* Centraliza o texto em telas menores */
+    text-align: center; 
   }
 `;
 
@@ -93,7 +94,7 @@ const IconsContainer = styled.div`
   margin-top: 20px;
 
   @media (max-width: 768px) {
-    flex-direction: row; /* Mantém a flexbox como linha em telas menores */
+    flex-direction: row; 
   }
 `;
 
@@ -118,7 +119,7 @@ const DownloadButton = styled.a`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.buttonColorLDhover}; /* Altere a cor no hover */
+    background-color: ${({ theme }) => theme.buttonColorLDhover}; 
   }
 `;
 

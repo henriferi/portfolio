@@ -20,38 +20,38 @@ const ContactContainer = styled.section`
   flex-direction: column;
   
   @media (min-width: 768px) {
-    flex-direction: row; // Altera a direção para linha em telas maiores
+    flex-direction: row; 
   }
 `;
 
 const Envelope = styled.img`
   height: auto;
-  width: 30%; // Aumenta a largura da imagem
+  width: 30%; 
   animation: ${float} 2s ease-in-out infinite;
-  margin-bottom: 30px; // Margem inferior para espaçamento em telas pequenas
+  margin-bottom: 30px; 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: white;
 
   @media (min-width: 768px) {
-    margin-bottom: 0; // Remove margem em telas maiores
-    margin-right: 50px; // Margem direita para espaçamento
+    margin-bottom: 0; 
+    margin-right: 50px; 
   }
 `;
 
 const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px; // Aumenta o espaço entre os elementos
+  gap: 20px; 
   width: 100%;
-  max-width: 600px; // Aumenta a largura máxima do formulário
+  max-width: 600px; 
 `;
 
 const FormTitle = styled.h2`
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 2rem; // Aumenta o tamanho da fonte
+  font-size: 2rem; 
   margin-bottom: 20px;
   color: ${({ theme }) => theme.text};
 `;
@@ -64,26 +64,26 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
-  padding: 15px; // Aumenta o padding para os inputs
+  padding: 15px; 
   border-radius: 5px;
   border: 1px solid ${({ theme }) => theme.text};
   outline: none;
-  font-size: 1rem; // Aumenta o tamanho da fonte
+  font-size: 1rem; 
 `;
 
 const TextArea = styled.textarea`
-  padding: 15px; // Aumenta o padding para o textarea
+  padding: 15px; 
   border-radius: 5px;
   border: 1px solid ${({ theme }) => theme.text};
   outline: none;
   resize: vertical;
-  font-size: 1rem; // Aumenta o tamanho da fonte
+  font-size: 1rem; 
 `;
 
 const Button = styled.button`
   background-color: ${({ theme }) => theme.text};
   color: ${({ theme }) => theme.primary};
-  padding: 15px; // Aumenta o padding para o botão
+  padding: 15px; 
   border: none;
   border-radius: 5px;
   cursor: pointer;

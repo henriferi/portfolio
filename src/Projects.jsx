@@ -7,8 +7,8 @@ const ProjectsContainer = styled.section`
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
 
-  @media (max-width: 768px) { /* Ajustes para telas menores */
-    padding: 30px; /* Diminuindo o padding em telas menores */
+  @media (max-width: 768px) { 
+    padding: 30px; 
   }
 `;
 
@@ -17,9 +17,9 @@ const TitleProjects = styled.h1`
   padding: 50px;
   text-align: center;
 
-  @media (max-width: 768px) { /* Ajustes para telas menores */
-    font-size: 2rem; /* Diminuindo o tamanho da fonte em telas menores */
-    padding: 30px; /* Diminuindo o padding em telas menores */
+  @media (max-width: 768px) { 
+    font-size: 2rem; 
+    padding: 30px; 
   }
 `;
 
@@ -28,8 +28,8 @@ const Grid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(500px, 2fr)); /* Layout responsivo */
   gap: 20px;
 
-  @media (max-width: 768px) { /* Ajustes para telas menores */
-    grid-template-columns: 1fr; /* Colocando os cartões em coluna única */
+  @media (max-width: 768px) { 
+    grid-template-columns: 1fr; 
   }
 `;
 
@@ -43,14 +43,14 @@ const ProjectCard = styled.div`
   transition: transform 0.3s ease;
 
   &:hover {
-    transform: scale(1.05); /* Efeito de aumento no hover */
+    transform: scale(1.05); 
   }
 `;
 
 const ProjectImage = styled.img`
   width: 100%;
-  height: 100%; /* Defina a altura para 100% do contêiner */
-  object-fit: cover; /* Aplica o efeito de cover */
+  height: 100%; 
+  object-fit: cover; 
   display: block;
 `;
 
@@ -61,7 +61,7 @@ const ProjectOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro */
+  background-color: rgba(0, 0, 0, 0.7); 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +70,7 @@ const ProjectOverlay = styled.div`
   transition: opacity 0.3s ease;
 
   ${ProjectCard}:hover & {
-    opacity: 1; /* Exibir overlay ao passar o cursor */
+    opacity: 1; 
   }
 `;
 
@@ -78,8 +78,8 @@ const ProjectName = styled.h3`
   color: #fff;
   font-size: 2rem;
 
-  @media (max-width: 768px) { /* Ajustes para telas menores */
-    font-size: 1.5rem; /* Diminuindo o tamanho da fonte em telas menores */
+  @media (max-width: 768px) { 
+    font-size: 1.5rem; 
   }
   margin-bottom: 10px;
 `;
@@ -98,9 +98,9 @@ const Button = styled.a`
     background-color: ${({ theme }) => theme.secondary};
   }
 
-  @media (max-width: 768px) { /* Ajustes para telas menores */
-    font-size: 1.2rem; /* Diminuindo o tamanho da fonte do botão */
-    padding: 8px 12px; /* Ajustando o padding do botão */
+  @media (max-width: 768px) { 
+    font-size: 1.2rem; 
+    padding: 8px 12px; 
   }
 `;
 

@@ -8,7 +8,7 @@ import { FaSun, FaMoon, FaBars } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 const HeaderContainer = styled.header`
-  position: fixed; /* Deixa o cabeçalho fixo na parte superior */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -17,11 +17,15 @@ const HeaderContainer = styled.header`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   justify-content: space-between;
   align-items: center;
-  padding: 50px 20px; /* Diminui o padding */
+  padding: 50px 20px; 
   background-color: ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.text};
-  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
-  height: 60px; /* Define uma altura fixa */
+  z-index: 1000;
+  height: 60px; 
+
+  @media (max-width: 768px) {
+    position: relative; 
+  }
 `;
 
 const Logo = styled.a`
@@ -30,19 +34,19 @@ const Logo = styled.a`
   cursor: pointer;
 
   @media (max-width: 768px) {
-    display: none; /* Oculta a logo em telas menores */
+    display: none; 
   }
 `;
 
 const Nav = styled.nav`
   display: flex;
-  gap: 15px; /* Diminui o espaço entre os links */
+  gap: 15px; 
   
   @media (max-width: 768px) {
-    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')}; /* Oculta o menu em telas pequenas */
+    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')}; 
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Abaixo do cabeçalho */
+    top: 60px; 
     left: 0;
     right: 0;
     background-color: ${({ theme }) => theme.primary};
@@ -54,49 +58,49 @@ const Nav = styled.nav`
 const NavLink = styled(Link)`
   color: ${({ theme }) => theme.text};
   text-decoration: none;
-  font-size: 1.7rem; /* Diminui o tamanho do texto */
+  font-size: 1.7rem; 
   cursor: pointer;
-  padding: 8px; /* Diminui o espaço ao redor do texto */
-  border-radius: 5px; /* Arredonda os cantos do botão */
+  padding: 8px; 
+  border-radius: 5px; 
   transition: background-color 0.3s, color 0.3s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.secondary}; /* Cor do fundo ao passar o mouse */
-    color: ${({ theme }) => theme.primary}; /* Altera a cor do texto ao passar o mouse */
+    background-color: ${({ theme }) => theme.secondary}; 
+    color: ${({ theme }) => theme.primary}; 
   }
 `;
 
 const ThemeToggleButton = styled.button`
-  position: fixed; /* Fixa o botão na tela */
-  bottom: 20px; /* Distância do fundo */
-  right: 20px; /* Distância da direita */
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px; // Largura do botão
-  height: 40px; // Altura do botão
+  width: 40px; 
+  height: 40px; 
   border: none;
-  border-radius: 50%; // Arredondamento dos cantos
-  background-color: ${({ theme }) => theme.buttonBgLD}; // Cor de fundo do botão
-  color: ${({ theme }) => theme.buttonColorLD}; // Cor do ícone
+  border-radius: 50%; 
+  background-color: ${({ theme }) => theme.buttonBgLD}; 
+  color: ${({ theme }) => theme.buttonColorLD}; 
   cursor: pointer;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.buttonColorLDhover}; // Cor do fundo ao passar o mouse
+    background-color: ${({ theme }) => theme.buttonColorLDhover}; 
   }
 `;
 
 const HamburgerMenu = styled.button`
-  display: none; /* Oculta o menu em telas grandes */
+  display: none; 
   background: none;
   border: none;
   cursor: pointer;
   color: ${({ theme }) => theme.text};
-  font-size: 1.6rem; /* Diminui o tamanho do ícone do menu */
+  font-size: 1.6rem;
 
   @media (max-width: 768px) {
-    display: flex; /* Exibe o ícone de menu em telas pequenas */
+    display: flex;
   }
 `;
 
