@@ -25,7 +25,7 @@ const ProfileImage = styled.img`
 
   @media (max-width: 768px) {
     width: 300px; /* Reduzindo mais o tamanho da imagem em telas menores */
-    margin-top:60%;
+    margin-top: 80%;
     margin-right: 0; /* Remove a margem direita em telas menores */
     margin-bottom: 20px; /* Adicionando margem inferior para separar da descrição */
   }

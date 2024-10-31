@@ -12,7 +12,7 @@ const SkillsContainer = styled.section`
 
    @media (max-width: 768px) { /* Ajustes para telas menores */
     padding: 30px; /* Diminuindo o padding em telas menores */
-    margin-top: 70%;
+    margin-top: 85%;
   }
 `;
 
