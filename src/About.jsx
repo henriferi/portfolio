@@ -10,22 +10,37 @@ import { FaWhatsapp, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 const AboutContainer = styled.section`
   display: flex;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 100px; /* Adicionando margin-top para afastar do header */
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
+  
+  @media (max-width: 768px) { /* Para telas menores */
+    flex-direction: column; /* Muda para coluna */
+  }
 `;
 
 const ProfileImage = styled.img`
-  width: 500px;
+  width: 400px; /* Diminuindo o tamanho da imagem */
   height: auto;
   border-radius: 30%;
   margin-right: 30px;
+
+  @media (max-width: 768px) {
+    width: 300px; /* Reduzindo mais o tamanho da imagem em telas menores */
+    margin-top:60%;
+    margin-right: 0; /* Remove a margem direita em telas menores */
+    margin-bottom: 20px; /* Adicionando margem inferior para separar da descrição */
+  }
 `;
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 768px) {
+    align-items: center; /* Centraliza os textos em telas menores */
+  }
 `;
 
 const Name = styled.h2`
@@ -67,6 +82,10 @@ const AboutText = styled.p`
   margin-top: 20px;
   margin-bottom: 20px; /* Espaço inferior */
   white-space: pre-line; /* Preserva as quebras de linha */
+
+  @media (max-width: 768px) {
+    text-align: center; /* Centraliza o texto em telas menores */
+  }
 `;
 
 const IconsContainer = styled.div`
@@ -74,6 +93,10 @@ const IconsContainer = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: row; /* Mantém a flexbox como linha em telas menores */
+  }
 `;
 
 const IconLink = styled.a`
@@ -103,7 +126,7 @@ const DownloadButton = styled.a`
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id='about'>
       <ProfileImage src={logo} alt="Minha Foto" />
       <TextContainer>
         <Name>Henrique Fernandes <FaComputer /></Name>

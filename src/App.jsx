@@ -5,6 +5,8 @@ import { useTheme } from './ThemeContext';
 import Header from './components/Header';
 import About from './About';
 import Projects from './projects';
+import Contact from './Contact';
+import Div from './Div';
 
 const Container = styled.div`
   display: flex;
@@ -23,7 +25,10 @@ function App() {
       <Container>
         <About />
       </Container>
+      <Div />
       <Projects />
+      <Div />
+      <Contact />
     </>
   );
 }

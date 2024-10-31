@@ -8,18 +8,32 @@ const ProjectsContainer = styled.section`
   padding: 50px;
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
+
+  @media (max-width: 768px) { /* Ajustes para telas menores */
+    padding: 30px; /* Diminuindo o padding em telas menores */
+    margin-top:65%;
+  }
 `;
 
+const TitleProjects = styled.h1`
+  font-size: 2.5rem;
+  padding: 50px;
+  text-align: center;
 
-const TitleProjects = styled.h1 `
-font-size: 2.5rem;
-padding: 50px;
-text-align: center;
-`
+  @media (max-width: 768px) { /* Ajustes para telas menores */
+    font-size: 2rem; /* Diminuindo o tamanho da fonte em telas menores */
+    padding: 30px; /* Diminuindo o padding em telas menores */
+  }
+`;
+
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 2fr)); // Layout responsivo
+  grid-template-columns: repeat(auto-fit, minmax(500px, 2fr)); /* Layout responsivo */
   gap: 20px;
+
+  @media (max-width: 768px) { /* Ajustes para telas menores */
+    grid-template-columns: 1fr; /* Colocando os cartões em coluna única */
+  }
 `;
 
 const ProjectCard = styled.div`
@@ -32,7 +46,7 @@ const ProjectCard = styled.div`
   transition: transform 0.3s ease;
 
   &:hover {
-    transform: scale(1.05); // Efeito de aumento no hover
+    transform: scale(1.05); /* Efeito de aumento no hover */
   }
 `;
 
@@ -48,7 +62,7 @@ const ProjectOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); // Fundo escuro
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,13 +71,17 @@ const ProjectOverlay = styled.div`
   transition: opacity 0.3s ease;
 
   ${ProjectCard}:hover & {
-    opacity: 1; // Exibir overlay ao passar o cursor
+    opacity: 1; /* Exibir overlay ao passar o cursor */
   }
 `;
 
 const ProjectName = styled.h3`
   color: #fff;
   font-size: 2rem;
+
+  @media (max-width: 768px) { /* Ajustes para telas menores */
+    font-size: 1.5rem; /* Diminuindo o tamanho da fonte em telas menores */
+  }
   margin-bottom: 10px;
 `;
 
@@ -80,11 +98,16 @@ const Button = styled.a`
   &:hover {
     background-color: ${({ theme }) => theme.secondary};
   }
+
+  @media (max-width: 768px) { /* Ajustes para telas menores */
+    font-size: 1.2rem; /* Diminuindo o tamanho da fonte do botão */
+    padding: 8px 12px; /* Ajustando o padding do botão */
+  }
 `;
 
 const Projects = () => {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id='projects'>
       <TitleProjects>Meus Projetos</TitleProjects>
       <Grid>
         {projectsData.map((project) => (
