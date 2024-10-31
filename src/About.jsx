@@ -2,7 +2,7 @@
 import logo from './assets/profile.png';
 import React from 'react';
 import styled from 'styled-components';
-import { FaDev, FaDocker, FaDownload, FaHtml5, FaNodeJs } from 'react-icons/fa';
+import { FaDatabase, FaDev, FaDocker, FaDownload, FaHtml5, FaNodeJs } from 'react-icons/fa';
 import { FaComputer } from 'react-icons/fa6';
 import { FaWhatsapp, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
@@ -20,7 +20,7 @@ const AboutContainer = styled.section`
 `;
 
 const ProfileImage = styled.img`
-  width: 400px; /* Diminuindo o tamanho da imagem */
+  width: 500px; /* Diminuindo o tamanho da imagem */
   height: auto;
   border-radius: 30%;
   margin-right: 30px;
@@ -110,8 +110,8 @@ const IconLink = styled.a`
 `;
 
 const DownloadButton = styled.a`
-  background-color: ${({ theme }) => theme.primary};
-  color: ${({ theme }) => theme.text};
+  background-color: ${({ theme }) => theme.buttonBgLD};
+  color: ${({ theme }) => theme.buttonColorLD};
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -120,7 +120,7 @@ const DownloadButton = styled.a`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.secondary}; /* Altere a cor no hover */
+    background-color: ${({ theme }) => theme.buttonColorLDhover}; /* Altere a cor no hover */
   }
 `;
 
@@ -139,7 +139,8 @@ const About = () => {
           Meu conhecimento abrange uma variedade de tecnologias, incluindo: <br/>
 
           <strong><FaHtml5 size={30}/> Front-end:</strong> HTML, CSS, JavaScript, TypeScript, React.js, Next.js, Angular, Styled-components e Tailwind CSS. <br/>
-          <strong><FaNodeJs size={30}/> Back-end:</strong> Node.js, Express, APIs RESTful e Python. <br/>
+          <strong><FaNodeJs size={30}/> Back-end:</strong> Node.js, Express, Prisma, APIs RESTful e Python. <br/>
+          <strong><FaDatabase size={30}/> Database: PostgreSQL, MySQL</strong><br/>
           <strong><FaDocker size={30}/> Ferramentas e Metodologias:</strong> Docker, Scrum e Kanban.<br/><br/>
 
           Estou sempre em busca de novos conhecimentos e oportunidades para aprimorar minhas habilidades tanto no front-end quanto no back-end. 
@@ -149,16 +150,16 @@ const About = () => {
           Estou empolgado para contribuir com sua equipe entregando excelência em cada projeto.
         </AboutText>
         <IconsContainer>
-          <IconLink href="https://api.whatsapp.com/send?phone=SEU_NUMERO" target="_blank" rel="noopener noreferrer">
+          <IconLink href="https://api.whatsapp.com/send?phone=5581986223012" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp size={30}/>
           </IconLink>
-          <IconLink href="https://www.linkedin.com/in/seu-linkedin" target="_blank" rel="noopener noreferrer">
+          <IconLink href="https://www.linkedin.com/in/henrique-fernandes-a29057214/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={30}/>
           </IconLink>
-          <IconLink href="https://github.com/seu-github" target="_blank" rel="noopener noreferrer">
+          <IconLink href="https://github.com/henriferi" target="_blank" rel="noopener noreferrer">
             <FaGithub size={30}/>
           </IconLink>
-          <IconLink href="mailto:seuemail@example.com" target="_blank" rel="noopener noreferrer">
+          <IconLink href="mailto:henriquefernandes.gouveia@gmail.com" rel="noopener noreferrer">
             <FaEnvelope size={30}/>
           </IconLink>
           <DownloadButton href="/curriculo.pdf" download>

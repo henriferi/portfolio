@@ -94,7 +94,7 @@ const Button = styled.button`
 
   &:hover {
     color: ${({ theme }) => theme.text};
-    background-color: ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.buttonColorLDhover};
   }
 `;
 

@@ -11,7 +11,6 @@ const ProjectsContainer = styled.section`
 
   @media (max-width: 768px) { /* Ajustes para telas menores */
     padding: 30px; /* Diminuindo o padding em telas menores */
-    margin-top:65%;
   }
 `;
 

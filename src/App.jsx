@@ -7,6 +7,8 @@ import About from './About';
 import Projects from './projects';
 import Contact from './Contact';
 import Div from './Div';
+import Skills from './Skills';
+import Footer from './components/Footer';
 
 const Container = styled.div`
   display: flex;
@@ -26,9 +28,12 @@ function App() {
         <About />
       </Container>
       <Div />
+      <Skills />
+      <Div />
       <Projects />
       <Div />
       <Contact />
+      <Footer />
     </>
   );
 }

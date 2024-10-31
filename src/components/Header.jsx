@@ -78,13 +78,13 @@ const ThemeToggleButton = styled.button`
   height: 40px; // Altura do botão
   border: none;
   border-radius: 50%; // Arredondamento dos cantos
-  background-color: ${({ theme }) => theme.secondary}; // Cor de fundo do botão
-  color: ${({ theme }) => theme.text}; // Cor do ícone
+  background-color: ${({ theme }) => theme.buttonBgLD}; // Cor de fundo do botão
+  color: ${({ theme }) => theme.buttonColorLD}; // Cor do ícone
   cursor: pointer;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.primary}; // Cor do fundo ao passar o mouse
+    background-color: ${({ theme }) => theme.buttonColorLDhover}; // Cor do fundo ao passar o mouse
   }
 `;
 
@@ -115,7 +115,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <Logo href="about">
-        <img src={logoSrc} alt="Logo do Meu Portfólio" style={{ width: '90px' }} /> {/* Diminui a largura da logo */}
+        <img src={logoSrc} alt="Logo do Meu Portfólio" style={{ width: '200px' }} /> {/* Diminui a largura da logo */}
       </Logo>
       <HamburgerMenu onClick={handleToggleMenu}>
         <FaBars />
@@ -123,6 +123,7 @@ const Header = () => {
       <Nav isOpen={isOpen}>
         <NavLink to="about" smooth={true} duration={500}>Sobre mim</NavLink>
         <NavLink to="projects" smooth={true} duration={500}>Projetos</NavLink>
+        <NavLink to="skills" smooth={true} duration={500}>Skills</NavLink>
         <NavLink to="contact" smooth={true} duration={500}>Contato</NavLink>
       </Nav>
       <ThemeToggleButton onClick={toggleTheme}>
