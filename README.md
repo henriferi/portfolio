@@ -38,21 +38,21 @@ O objetivo deste portfólio é apresentar minhas habilidades como desenvolvedor 
 └── README.md       # Documentação do projeto
 ```
 
-📝 Como Executar o Projeto
+## 📝 Como Executar o Projeto
 
-Clone o repositório: git clone https://github.com/henriferi/portfolio.git
-Instale as dependências: npm install
-Execute o projeto: npm run dev
-Acesse em http://localhost:3000 para visualizar.
+- Clone o repositório: git clone https://github.com/henriferi/portfolio.git
+- Instale as dependências: npm install
+- Execute o projeto: npm run dev
+- Acesse em http://localhost:3000 para visualizar.
 
 
-📸 Prévia do Projeto
+## 📸 Prévia do Projeto
 
 ![Prévia do Portfólio](public/preview.png)
 
 
 
-Autor: Henrique Fernandes 💻
+## Autor: Henrique Fernandes 💻
 
 
 Qualquer feedback ou sugestões são bem-vindos! 😊
