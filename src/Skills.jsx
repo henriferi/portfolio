@@ -69,7 +69,7 @@ const skillsData = {
   ],
   "Back-end": [
     { name: "Node.js", icon: <FaNodeJs /> },
-    { name: "Express", icon: <FaNodeJs /> }
+    { name: "Express", icon: <FaNodeJs /> },
     { name: "API Restful", icon: <FaNodeJs /> }, 
     { name: "Python", icon: <SiPython /> },
     { name: "Prisma", icon: <SiPrisma /> },
