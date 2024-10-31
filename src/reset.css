@@ -1,0 +1,21 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Você pode mudar para a fonte que preferir */
+  }
+  
+  a {
+    color: inherit; /* Faz com que os links herdem a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+  }
+  
+  img {
+    max-width: 100%; /* Faz com que as imagens não ultrapassem a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
