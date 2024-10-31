@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { useTheme } from './ThemeContext';
 import Header from './components/Header';
 import About from './About';
+import Projects from './projects';
 
 const Container = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ function App() {
       <Container>
         <About />
       </Container>
+      <Projects />
     </>
   );
 }

@@ -82,7 +82,7 @@ const IconLink = styled.a`
   transition: color 0.3s;
 
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.iconsContact};
   }
 `;
 
@@ -127,16 +127,16 @@ const About = () => {
         </AboutText>
         <IconsContainer>
           <IconLink href="https://api.whatsapp.com/send?phone=SEU_NUMERO" target="_blank" rel="noopener noreferrer">
-            <FaWhatsapp />
+            <FaWhatsapp size={30}/>
           </IconLink>
           <IconLink href="https://www.linkedin.com/in/seu-linkedin" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
+            <FaLinkedin size={30}/>
           </IconLink>
           <IconLink href="https://github.com/seu-github" target="_blank" rel="noopener noreferrer">
-            <FaGithub />
+            <FaGithub size={30}/>
           </IconLink>
           <IconLink href="mailto:seuemail@example.com" target="_blank" rel="noopener noreferrer">
-            <FaEnvelope />
+            <FaEnvelope size={30}/>
           </IconLink>
           <DownloadButton href="/curriculo.pdf" download>
             <FaDownload /> Currículo
