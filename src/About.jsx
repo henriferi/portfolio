@@ -1,4 +1,3 @@
-// src/About.js
 import logo from './assets/profile.png';
 import React from 'react';
 import styled from 'styled-components';
@@ -6,7 +5,6 @@ import { FaDatabase, FaDev, FaDocker, FaDownload, FaHtml5, FaNodeJs } from 'reac
 import { FaComputer } from 'react-icons/fa6';
 import { FaWhatsapp, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
-// Estilização
 const AboutContainer = styled.section`
   display: flex;
   align-items: center;

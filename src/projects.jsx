@@ -1,9 +1,7 @@
-// src/Projects.js
 import React from 'react';
 import styled from 'styled-components';
 import projectsData from './data/projects';
 
-// Estilizações
 const ProjectsContainer = styled.section`
   padding: 50px;
   background-color: ${({ theme }) => theme.background};

@@ -1,10 +1,9 @@
-// src/App.js
 
 import styled from 'styled-components';
 import { useTheme } from './ThemeContext';
 import Header from './components/Header';
 import About from './About';
-import Projects from './projects';
+import Projects from './Projects';
 import Contact from './Contact';
 import Div from './Div';
 import Skills from './Skills';

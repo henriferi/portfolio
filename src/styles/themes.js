@@ -1,4 +1,3 @@
-// src/styles/themes.js
 
 export const lightTheme = {
     background: '#ffffff',
@@ -22,11 +21,4 @@ export const lightTheme = {
     buttonColorLD: '#121212',
     buttonColorLDhover: '#C0C0C0',
   };
-  
-  export const theme = {
-    scrollbarTrack: '#f0f0f0',         // Cor clara para a trilha
-    scrollbarThumb: '#000000',         // Cor preta para o thumb
-    scrollbarThumbHover: '#333333'     // Tom mais claro para o hover do thumb
-  };
-  
   

@@ -3,42 +3,42 @@ const projectsData = [
     {
         id: 1,
         name: 'Ecommerce com Api products',
-        image: '/E-Commerce-kabousse.png', // Insira o caminho correto para a imagem
+        image: '/E-Commerce-kabousse.png', 
         liveLink: 'https://henriferi.github.io/kabousse_store_nextjs/',
         codeLink: 'https://github.com/henriferi/kabousse_store_nextjs'
     },
     {
         id: 2,
         name: 'Crud Users Database 2',
-        image: '/cadastro_usuarios_2.png', // Insira o caminho correto para a imagem
+        image: '/cadastro_usuarios_2.png', 
         liveLink: 'https://github.com/henriferi/crud-app',
         codeLink: 'https://github.com/henriferi/crud-app'
     },
     {
         id: 3,
         name: 'Crud NextJS, TypeScript, Database',
-        image: '/crud_next_database.png', // Insira o caminho correto para a imagem
+        image: '/crud_next_database.png', 
         liveLink: 'https://github.com/henriferi/app-bd',
         codeLink: 'https://github.com/henriferi/app-bd'
     },
     {
         id: 4,
         name: 'E-coommerce DivineSweets',
-        image: '/divineSweets.png', // Insira o caminho correto para a imagem
+        image: '/divineSweets.png', 
         liveLink: 'https://henriferi.github.io/divineSweets/',
         codeLink: 'https://github.com/henriferi/divineSweets'
     },
     {
         id: 5,
         name: 'Participantes no database',
-        image: '/projeto_nlw.png', // Insira o caminho correto para a imagem
+        image: '/projeto_nlw.png', 
         liveLink: 'https://github.com/henriferi/projeto-rocketseat-nlw',
         codeLink: 'https://github.com/henriferi/projeto-rocketseat-nlw'
     },
     {
         id: 6,
         name: 'Requisição Api animes',
-        image: '/animes_api.png', // Insira o caminho correto para a imagem
+        image: '/animes_api.png', 
         liveLink: 'https://henriferi.github.io/animes-api/',
         codeLink: 'https://github.com/henriferi/animes-api'
     },
@@ -52,7 +52,7 @@ const projectsData = [
     {
         id: 8,
         name: 'Plataforma Rocketseat',
-        image: '/event_platform.png', // Insira o caminho correto para a imagem
+        image: '/event_platform.png', 
         liveLink: 'https://github.com/henriferi/event-platform',
         codeLink: 'https://github.com/henriferi/event-platform'
     },
@@ -66,7 +66,7 @@ const projectsData = [
     {
         id: 10,
         name: 'Portifolio 1.0',
-        image: '/portifolio1.0.png', // Insira o caminho correto para a imagem
+        image: '/portifolio1.0.png',
         liveLink: 'https://henriferi.github.io/portifolioatt/',
         codeLink: 'https://github.com/henriferi/portifolioatt'
     },

@@ -1,7 +1,6 @@
-// src/Skills.js
 import React from 'react';
 import styled from 'styled-components';
-import { GiEarthAmerica } from 'react-icons/gi'; // Ícone de globo
+import { GiEarthAmerica } from 'react-icons/gi'; 
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiTypescript, SiNextdotjs, SiAngular, SiStyledcomponents, SiTailwindcss, SiDocker, SiPostgresql, SiMysql, SiPrisma, SiPython, SiTrello } from 'react-icons/si';
 
@@ -70,9 +69,9 @@ const skillsData = {
   ],
   "Back-end": [
     { name: "Node.js", icon: <FaNodeJs /> },
-    { name: "Express", icon: <FaNodeJs /> }, // Usando o mesmo ícone de Node.js
+    { name: "Express", icon: <FaNodeJs /> }
     { name: "API Restful", icon: <FaNodeJs /> }, 
-    { name: "Python", icon: <SiPython /> }, // Ícone do Python
+    { name: "Python", icon: <SiPython /> },
     { name: "Prisma", icon: <SiPrisma /> },
   ],
   "Banco de Dados": [

@@ -1,12 +1,11 @@
-// src/Header.js
 
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useTheme } from '../ThemeContext';
-import logoLight from '../assets/logo1.png'; // Imagem para o modo claro
-import logoDark from '../assets/logo2.png'; // Imagem para o modo escuro
-import { FaSun, FaMoon, FaBars } from 'react-icons/fa'; // Importando ícones de sol, lua e menu
-import { Link } from 'react-scroll'; // Importando para rolar suavemente
+import logoLight from '../assets/logo1.png';
+import logoDark from '../assets/logo2.png';
+import { FaSun, FaMoon, FaBars } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const HeaderContainer = styled.header`
   position: fixed; /* Deixa o cabeçalho fixo na parte superior */
@@ -103,19 +102,18 @@ const HamburgerMenu = styled.button`
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
-  const [isOpen, setIsOpen] = useState(false); // Estado para controlar a abertura do menu
+  const [isOpen, setIsOpen] = useState(false);
 
-  // Seleciona a logo com base no tema atual
   const logoSrc = theme === 'light' ? logoLight : logoDark;
 
   const handleToggleMenu = () => {
-    setIsOpen(prevState => !prevState); // Alterna a visibilidade do menu
+    setIsOpen(prevState => !prevState);
   };
 
   return (
     <HeaderContainer>
       <Logo href="about">
-        <img src={logoSrc} alt="Logo do Meu Portfólio" style={{ width: '200px' }} /> {/* Diminui a largura da logo */}
+        <img src={logoSrc} alt="Logo do Meu Portfólio" style={{ width: '200px' }} /> 
       </Logo>
       <HamburgerMenu onClick={handleToggleMenu}>
         <FaBars />
@@ -127,7 +125,7 @@ const Header = () => {
         <NavLink to="contact" smooth={true} duration={500}>Contato</NavLink>
       </Nav>
       <ThemeToggleButton onClick={toggleTheme}>
-        {theme === 'light' ? <FaMoon /> : <FaSun />} {/* Ícone baseado no tema */}
+        {theme === 'light' ? <FaMoon /> : <FaSun />} 
       </ThemeToggleButton>
     </HeaderContainer>
   );

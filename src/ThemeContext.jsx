@@ -1,4 +1,3 @@
-// src/ThemeContext.js
 
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
@@ -15,7 +14,6 @@ export const useTheme = () => {
 };
 
 export const ThemeContextProvider = ({ children }) => {
-  // Inicializa o tema a partir do localStorage, se disponível
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
   });
@@ -23,13 +21,12 @@ export const ThemeContextProvider = ({ children }) => {
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-    localStorage.setItem('theme', newTheme); // Armazena a nova preferência no localStorage
+    localStorage.setItem('theme', newTheme);
   };
 
   const currentTheme = theme === 'light' ? lightTheme : darkTheme;
 
   useEffect(() => {
-    // Aplica o tema no body
     document.body.setAttribute('data-theme', theme);
   }, [theme]);
 

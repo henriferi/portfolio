@@ -6,16 +6,16 @@
   }
   
   body {
-    font-family: Arial, sans-serif; /* Você pode mudar para a fonte que preferir */
+    font-family: Arial, sans-serif; 
   }
   
   a {
-    color: inherit; /* Faz com que os links herdem a cor do elemento pai */
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: inherit; 
+    text-decoration: none; 
   }
   
   img {
-    max-width: 100%; /* Faz com que as imagens não ultrapassem a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%;
+    height: auto; 
   }
   

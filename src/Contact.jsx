@@ -1,4 +1,3 @@
-// src/Contact.js
 import React, { useRef, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import emailjs from 'emailjs-com';
@@ -11,7 +10,6 @@ const float = keyframes`
   100% { transform: translateY(0); }
 `;
 
-// Estilização da página
 const ContactContainer = styled.section`
   display: flex;
   align-items: center;
@@ -98,7 +96,6 @@ const Button = styled.button`
   }
 `;
 
-// Estilização do Modal
 const ModalOverlay = styled.div`
   position: fixed;
   top: 0;
@@ -145,13 +142,13 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_yt49clh', // Substitua pelo seu Service ID
-      'template_dkwnzom', // Substitua pelo seu Template ID
+      'service_yt49clh',
+      'template_dkwnzom',
       form.current,
-      'tC5n0pg5GZANEq-KZ' // Substitua pelo seu User ID
+      'tC5n0pg5GZANEq-KZ'
     )
       .then((result) => {
-        setModalVisible(true); // Mostra o modal quando o email é enviado com sucesso
+        setModalVisible(true);
       })
       .catch((error) => {
         alert('Erro ao enviar email, tente novamente mais tarde.');
@@ -160,7 +157,7 @@ const Contact = () => {
   };
 
   const closeModal = () => {
-    setModalVisible(false); // Fecha o modal
+    setModalVisible(false); 
   };
 
   return (
@@ -179,7 +176,6 @@ const Contact = () => {
         </Form>
       </FormContainer>
 
-      {/* Modal para exibir a mensagem de email enviado */}
       {modalVisible && (
         <ModalOverlay onClick={closeModal}>
           <ModalContent onClick={(e) => e.stopPropagation()}>
