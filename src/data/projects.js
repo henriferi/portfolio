@@ -30,10 +30,10 @@ const projectsData = [
     },
     {
         id: 5,
-        name: 'Participantes no database',
-        image: '/projeto_nlw.png', 
-        liveLink: 'https://github.com/henriferi/projeto-rocketseat-nlw',
-        codeLink: 'https://github.com/henriferi/projeto-rocketseat-nlw'
+        name: 'Banco Digital',
+        image: '/app-bank.png', 
+        liveLink: 'https://app-banco-zeta.vercel.app/login',
+        codeLink: 'https://github.com/henriferi/app-banco'
     },
     {
         id: 6,
@@ -83,6 +83,13 @@ const projectsData = [
         image: '/decodificador.png',
         liveLink: 'https://henriferi.github.io/DesafioAlura/',
         codeLink: 'https://github.com/henriferi/DesafioAlura'
+    },
+    {
+        id: 13,
+        name: 'Participantes no database',
+        image: '/projeto_nlw.png', 
+        liveLink: 'https://github.com/henriferi/projeto-rocketseat-nlw',
+        codeLink: 'https://github.com/henriferi/projeto-rocketseat-nlw'
     },
 ];
 
