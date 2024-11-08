@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { GiEarthAmerica } from 'react-icons/gi'; 
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiTypescript, SiNextdotjs, SiAngular, SiStyledcomponents, SiTailwindcss, SiDocker, SiPostgresql, SiMysql, SiPrisma, SiPython, SiTrello } from 'react-icons/si';
+import { SiTypescript, SiNextdotjs, SiAngular, SiStyledcomponents, SiTailwindcss, SiDocker, SiPostgresql, SiMysql, SiPrisma, SiPython, SiTrello, SiWordpress } from 'react-icons/si';
 
 const SkillsContainer = styled.section`
   padding: 50px;
@@ -82,6 +82,7 @@ const skillsData = {
   ],
   "Ferramentas e Metodologias": [
     { name: "Docker", icon: <SiDocker /> },
+    { name: "Wordpress", icon: <SiWordpress /> },
     { name: "Scrum", icon: <SiTrello /> },
   ],
 };

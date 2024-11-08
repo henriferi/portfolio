@@ -114,8 +114,8 @@ const Projects = () => {
             <ProjectImage src={project.image} alt={project.name} />
             <ProjectOverlay>
               <ProjectName>{project.name}</ProjectName>
-              <Button href={project.liveLink} target="_blank" rel="noopener noreferrer">Ver Projeto</Button>
-              <Button href={project.codeLink} target="_blank" rel="noopener noreferrer">Ver Código</Button>
+              {project.liveLink && (<Button href={project.liveLink} target="_blank" rel="noopener noreferrer">Ver Projeto</Button>)}
+              {project.codeLink && (<Button href={project.codeLink} target="_blank" rel="noopener noreferrer">Ver Código</Button>)}
             </ProjectOverlay>
           </ProjectCard>
         ))}
