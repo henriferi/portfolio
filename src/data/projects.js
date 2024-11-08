@@ -95,4 +95,6 @@ const projectsData = [
         }
 ];
 
+projectsData.reverse()
+
 export default projectsData;

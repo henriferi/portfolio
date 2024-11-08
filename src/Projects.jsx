@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import projectsData from './data/projects';
+
+
+
+const ProjectGrid = () => {
+};
+
+
 
 const ProjectsContainer = styled.section`
   padding: 50px;
@@ -104,22 +111,67 @@ const Button = styled.a`
   }
 `;
 
+const ContainerShowMore = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+`;
+
+const ButtonShowMore = styled.a`
+  background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.text};
+  padding: 10px 50px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.buttonColorLDhover};
+  }
+
+  @media (max-width: 768px) { 
+    font-size: 1.2rem; 
+    padding: 8px 30px; 
+  }
+`;
+
 const Projects = () => {
+  const [visibleProjects, setVisibleProjects] = useState(6);
+
+  const handleShowMore = () => {
+    setVisibleProjects(prev => prev + 6);
+  }
+
   return (
     <ProjectsContainer id='projects'>
       <TitleProjects>Meus Projetos</TitleProjects>
       <Grid>
-        {projectsData.map((project) => (
+        {projectsData.slice(0, visibleProjects).map((project) => (
           <ProjectCard key={project.id}>
             <ProjectImage src={project.image} alt={project.name} />
             <ProjectOverlay>
               <ProjectName>{project.name}</ProjectName>
-              {project.liveLink && (<Button href={project.liveLink} target="_blank" rel="noopener noreferrer">Ver Projeto</Button>)}
-              {project.codeLink && (<Button href={project.codeLink} target="_blank" rel="noopener noreferrer">Ver Código</Button>)}
+              {project.liveLink && (
+                <Button href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                  Ver Projeto
+                </Button>
+              )}
+              {project.codeLink && (
+                <Button href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                  Ver Código
+                </Button>
+              )}
             </ProjectOverlay>
           </ProjectCard>
         ))}
       </Grid>
+      <ContainerShowMore>
+        {visibleProjects < projectsData.length && (
+          <ButtonShowMore onClick={handleShowMore}>Ver Mais</ButtonShowMore>
+        )}
+      </ContainerShowMore>
     </ProjectsContainer>
   );
 };
