@@ -92,6 +92,13 @@ const projectsData = [
             name: 'Landing Page',
             image: '/cecisite.png',
             liveLink: 'https://ceciliagouveiapsi.com/',
+        },
+        {
+            id: 15,
+            name: 'Barbearia',
+            image: '/barbearia.png',
+            liveLink: 'https://barbearia-dom.vercel.app/',
+            codeLink: 'https://github.com/henriferi/barbearia-dom'
         }
 ];
 
