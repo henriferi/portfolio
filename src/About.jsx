@@ -1,4 +1,4 @@
-import logo from './assets/profile.png';
+import perfil from './assets/profile2.jpg';
 import React from 'react';
 import styled from 'styled-components';
 import { FaDatabase, FaDev, FaDocker, FaDownload, FaHtml5, FaNodeJs } from 'react-icons/fa';
@@ -126,7 +126,7 @@ const DownloadButton = styled.a`
 const About = () => {
   return (
     <AboutContainer id='about'>
-      <ProfileImage src={logo} alt="Minha Foto" />
+      <ProfileImage src={perfil} alt="Minha Foto" />
       <TextContainer>
         <Name>Henrique Fernandes <FaComputer /></Name>
         <Role>
