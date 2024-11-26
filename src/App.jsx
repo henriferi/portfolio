@@ -1,5 +1,4 @@
 
-import { useTheme } from './ThemeContext';
 import Header from './components/Header';
 import About from './About';
 import Projects from './Projects';
