@@ -99,6 +99,13 @@ const projectsData = [
             image: '/barbearia.png',
             liveLink: 'https://barbearia-dom.vercel.app/',
             codeLink: 'https://github.com/henriferi/barbearia-dom'
+        },
+        {
+            id: 16,
+            name: 'Salão escola Senac/PE',
+            image: '/senac-math.png',
+            liveLink: 'https://salao-senac-recife.vercel.app/',
+            codeLink: 'https://github.com/henriferi/salao-senac-recife'
         }
 ];
 
